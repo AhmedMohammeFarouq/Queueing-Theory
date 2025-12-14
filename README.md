@@ -69,7 +69,7 @@ A **web-based simulator** for queueing theory, focusing on **stochastic models (
 <img width="1895" height="928" alt="image" src="https://github.com/user-attachments/assets/095ff9ad-1540-4323-9133-cd68468b3ec5" />
 <img width="1896" height="925" alt="image" src="https://github.com/user-attachments/assets/aee1ac8a-be52-48ed-9277-1fa51592b44f" />
 
-  - Case One  { Arrival time (1/λ) < Service time (1/μ)}
+  - #### Case One  { Arrival time (1/λ) < Service time (1/μ)}
 
 <img width="1902" height="930" alt="image" src="https://github.com/user-attachments/assets/2cc84b4d-c580-4345-aaf2-6aa63f6e71d3" />
 
@@ -78,7 +78,7 @@ A **web-based simulator** for queueing theory, focusing on **stochastic models (
 <img width="1900" height="930" alt="image" src="https://github.com/user-attachments/assets/a6818169-ee6a-492d-a2c2-4e9154f25012" />
 
   
-  - Case One  { Arrival time (1/λ) >= Service time (1/μ)}
+  - #### Case two  { Arrival time (1/λ) >= Service time (1/μ)}
     
 <img width="1899" height="929" alt="image" src="https://github.com/user-attachments/assets/95f64483-5105-479a-8904-73e6249686f0" />
 
@@ -86,7 +86,21 @@ A **web-based simulator** for queueing theory, focusing on **stochastic models (
 
 <img width="1900" height="929" alt="image" src="https://github.com/user-attachments/assets/ef596b70-61c8-460d-9f1a-3d90fced0460" />
 
+### Stochastic Models (M/M/1 & M/M/1/K)
 
+<img width="1919" height="926" alt="image" src="https://github.com/user-attachments/assets/978b16b9-ac29-48a0-bdea-77ae20c328f1" />
+
+  - #### Case One  {M/M/1 }
+
+<img width="1902" height="633" alt="image" src="https://github.com/user-attachments/assets/47fe9291-3305-4a9b-ad9c-41082a9f15bb" />
+
+<img width="1908" height="631" alt="image" src="https://github.com/user-attachments/assets/bf20a532-2d0d-4823-8a76-e8f802b2255e" />
+
+  - #### Case One  {M/M/1/K }
+
+<img width="1899" height="624" alt="image" src="https://github.com/user-attachments/assets/73605aac-b578-4840-8e09-a9cac5a4b96c" />
+
+<img width="1898" height="805" alt="image" src="https://github.com/user-attachments/assets/b449cfc7-393a-4d84-bb59-9c16e5d45119" />
 
 
 ---

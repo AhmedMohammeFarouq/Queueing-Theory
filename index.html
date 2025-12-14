@@ -1,0 +1,241 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Queueing Theory</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+  <body>
+    <div class="container p-3 bg-secondary-subtle">
+      <h1 class="text-center shadow rounded bg-dark text-white m-4 p-5 mt-0">
+        Queueing Theory (Deterministic)
+      </h1>
+      <section>
+        <div class="row ms-4">
+          <div>
+            <a href="./index.html "
+              ><button type="button" class="btn btn-info">Deterministic</button>
+            </a>
+            <a href="./stoch.html"
+              ><button type="button" class="btn btn-info">Stochastic</button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="row m-4 form">
+        <div class="col-md-5">
+          <label class="form-label text-secondary fw-bold ms-0 ms-sm-1"
+            >Customer Arrival Time (1/&lambda;)</label
+          >
+          <input
+            type="number"
+            id="arrivals"
+            required
+            class="form-control"
+            required
+            placeholder="Pleas enter the arrival time "
+          />
+        </div>
+        <div class="col-md-5">
+          <label class="form-label text-secondary fw-bold ms-0 ms-sm-1"
+            >Service Time (1/&mu;)</label
+          >
+          <input
+            id="service"
+            type="number"
+            class="form-control"
+            required
+            placeholder="Pleas enter the service time "
+          />
+        </div>
+        <div class="col-md-2 d-flex align-items-end mt-3">
+          <button class="btn btn-primary w-100" id="btn">Draw</button>
+        </div>
+        <div class="col-md-5">
+          <label class="form-label text-secondary fw-bold ms-0 ms-sm-1"
+            >number of customer (M)</label
+          >
+          <input
+            id="m"
+            type="number"
+            class="form-control"
+            required
+            placeholder="Pleas enter the number of customer (M)"
+          />
+        </div>
+        <div class="col-md-5">
+          <label class="form-label text-secondary fw-bold ms-0 ms-sm-1"
+            >kendell Notation A/B/X/Y/Z</label
+          >
+          <input
+            id="kendellNotation"
+            class="form-control"
+            required
+            placeholder="Pleas enter the kendell Notation Ex (D/D/1/4) "
+          />
+        </div>
+        <div class="col-md-5">
+          <label class="form-label text-secondary fw-bold ms-0 ms-sm-1"
+            >System Capacity</label
+          >
+          <input
+            id="capacity"
+            type="number"
+            class="form-control"
+            required
+            placeholder="Pleas enter the Capacity of System"
+          />
+        </div>
+        <div class="col-md-5">
+          <label class="form-label text-secondary fw-bold ms-0 ms-sm-1"
+            >Number of customer at any Time = n(t)</label
+          >
+          <input
+            id="time"
+            class="form-control"
+            required
+            placeholder="Pleas enter any time "
+          />
+        </div>
+        <div class="col-md-5">
+          <label class="form-label text-secondary fw-bold ms-0 ms-sm-1"
+            >The Waiting time W<sub>q</sub>(n) for customer (n)
+          </label>
+          <input
+            id="number"
+            class="form-control"
+            required
+            placeholder="Pleas enter any customer number "
+          />
+        </div>
+      </div>
+      <section class="container m-3 p-4">
+        <div class="row bg-dark-subtle shadow rounded" id="conte"></div>
+      </section>
+      <div id="diagram" class="m-4 p-5 overflow-x-hidden"></div>
+    </div>
+
+    <script src="./assets/js/code.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Queueing Theory – Deterministic</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <!-- Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom UX CSS -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+
+  <body>
+    <main class="app-container fade-in">
+      <!-- HEADER -->
+      <header class="app-header">
+        <h1>
+          <i class="bi bi-diagram-3"></i>
+          Queueing Theory
+        </h1>
+        <p class="subtitle">Deterministic Queue Model</p>
+      </header>
+
+      <!-- MODEL SWITCH -->
+      <section class="model-switch">
+        <a href="./index.html" class="btn btn-primary me-2"> Deterministic </a>
+        <a href="./stoch.html" class="btn btn-outline-primary"> Stochastic </a>
+      </section>
+
+      <!-- INPUTS -->
+      <section class="card ux-card slide-up">
+        <h2 class="section-title"><span>1</span> System Parameters</h2>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <label>Arrival Time (1/λ)</label>
+            <input id="arrivals" type="number" class="form-control" />
+            <small>Time between arrivals</small>
+          </div>
+
+          <div class="col-md-4">
+            <label>Service Time (1/μ)</label>
+            <input id="service" type="number" class="form-control" />
+            <small>Service duration</small>
+          </div>
+
+          <div class="col-md-4">
+            <label>Number of Customers (M)</label>
+            <input id="m" type="number" class="form-control" />
+          </div>
+
+          <div class="col-md-6">
+            <label>Kendall Notation</label>
+            <input
+              id="kendellNotation"
+              class="form-control"
+              placeholder="D/D/1/4"
+            />
+            <small>A/B/X/Y/Z format</small>
+          </div>
+
+          <div class="col-md-6">
+            <label>System Capacity</label>
+            <input id="capacity" type="number" class="form-control" />
+          </div>
+        </div>
+      </section>
+
+      <!-- QUERIES -->
+      <section class="card ux-card">
+        <h2 class="section-title"><span>2</span> Analysis Queries</h2>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <label>Customers at time t → n(t)</label>
+            <input id="time" class="form-control" />
+          </div>
+
+          <div class="col-md-6">
+            <label>Waiting time for customer n → Wq(n)</label>
+            <input id="number" class="form-control" />
+          </div>
+        </div>
+
+        <!-- IMPORTANT BUTTON -->
+        <button id="btn" class="btn btn-success btn-lg w-100 mt-4">
+          <i class="bi bi-play-circle"></i>
+          Generate Results & Diagram
+        </button>
+      </section>
+
+      <!-- RESULTS (JS WRITES HERE) -->
+      <section class="card ux-card">
+        <h2 class="section-title"><span>3</span> Results</h2>
+        <div class="row g-4" id="conte"></div>
+      </section>
+
+      <!-- DIAGRAM (JS DRAWS HERE) -->
+      <section class="card ux-card">
+        <h2 class="section-title"><span>4</span> Queue Diagram</h2>
+        <div id="diagram" class="diagram-area"></div>
+      </section>
+    </main>
+
+    <!-- YOUR JS (UNCHANGED) -->
+    <script src="./assets/js/code.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

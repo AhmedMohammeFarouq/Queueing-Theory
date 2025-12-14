@@ -111,6 +111,12 @@ A **web-based simulator** for queueing theory, focusing on **stochastic models (
 
 ---
 
+## 💡 **Author**
+
+**Ahmed Farouk** – Systems Engineer & Frontend Developer
+
+---
+
 ## 📂 **Project Structure**
 
 ```css
@@ -123,4 +129,7 @@ A **web-based simulator** for queueing theory, focusing on **stochastic models (
 index.html
 stoch.html
 README.md
+
+---
+
 

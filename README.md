@@ -51,10 +51,7 @@ A **web-based simulator** for queueing theory, focusing on **stochastic models (
 - **Bootstrap Icons** for visual cues
 
 ---
-## 🖼 Screenshots
 
-
----
 
 ## 🎨 **How to Use**
 
@@ -67,8 +64,13 @@ A **web-based simulator** for queueing theory, focusing on **stochastic models (
 ---
 
 ## 📊 **Screenshots**
+--Deterministic Queue Model
+<img width="551" height="696" alt="image" src="https://github.com/user-attachments/assets/c7db3140-3900-48fa-b988-8800fead34f2" />
+  - Case One  { Arrival time (1/λ) < Service time (1/μ)}
+  <img width="389" height="788" alt="image" src="https://github.com/user-attachments/assets/f862dcb5-590a-4168-ba56-d28a959f022b" />
+  - Case One  { Arrival time (1/λ) >= Service time (1/μ)}
+  <img width="391" height="791" alt="image" src="https://github.com/user-attachments/assets/ede68a4a-22c9-4b2a-894a-d5fdd66be36e" />
 
-![Queueing Simulator Screenshot](screenshot.png)
 
 ---
 

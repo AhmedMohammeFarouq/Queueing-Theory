@@ -64,12 +64,29 @@ A **web-based simulator** for queueing theory, focusing on **stochastic models (
 ---
 
 ## 📊 **Screenshots**
---Deterministic Queue Model
-<img width="551" height="696" alt="image" src="https://github.com/user-attachments/assets/c7db3140-3900-48fa-b988-8800fead34f2" />
+### Deterministic Queue Model
+
+<img width="1895" height="928" alt="image" src="https://github.com/user-attachments/assets/095ff9ad-1540-4323-9133-cd68468b3ec5" />
+<img width="1896" height="925" alt="image" src="https://github.com/user-attachments/assets/aee1ac8a-be52-48ed-9277-1fa51592b44f" />
+
   - Case One  { Arrival time (1/λ) < Service time (1/μ)}
-  <img width="389" height="788" alt="image" src="https://github.com/user-attachments/assets/f862dcb5-590a-4168-ba56-d28a959f022b" />
+
+<img width="1902" height="930" alt="image" src="https://github.com/user-attachments/assets/2cc84b4d-c580-4345-aaf2-6aa63f6e71d3" />
+
+<img width="1900" height="929" alt="image" src="https://github.com/user-attachments/assets/84564cdd-0c0f-4627-abd9-c907dc92905e" />
+
+<img width="1900" height="930" alt="image" src="https://github.com/user-attachments/assets/a6818169-ee6a-492d-a2c2-4e9154f25012" />
+
+  
   - Case One  { Arrival time (1/λ) >= Service time (1/μ)}
-  <img width="391" height="791" alt="image" src="https://github.com/user-attachments/assets/ede68a4a-22c9-4b2a-894a-d5fdd66be36e" />
+    
+<img width="1899" height="929" alt="image" src="https://github.com/user-attachments/assets/95f64483-5105-479a-8904-73e6249686f0" />
+
+<img width="1900" height="823" alt="image" src="https://github.com/user-attachments/assets/df386549-4058-4ed7-a72c-191c2084f5eb" />
+
+<img width="1900" height="929" alt="image" src="https://github.com/user-attachments/assets/ef596b70-61c8-460d-9f1a-3d90fced0460" />
+
+
 
 
 ---

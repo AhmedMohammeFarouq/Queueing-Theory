@@ -1,57 +1,93 @@
-🚦 Queueing Theory Simulator
+# 🚦 **Queueing Theory Simulator**
 
-Live Demo: 🔗 https://ahmedmohammefarouq.github.io/Queueing-Theory/
+A **web-based simulator** for queueing theory, focusing on **stochastic models (M/M/1 & M/M/1/K)**. This tool allows users to calculate system performance measures and visualize customer arrivals, service times, and queue behavior.
 
----------------------------------------------------------------
-📝 Project Overview
+---
 
-This project is a Queueing Theory Simulator for M/M/1 and M/M/1/K models.
-It is designed for students, engineers, and researchers to calculate and visualize queue performance metrics interactively.
+## ⚡ **Features**
 
-The system calculates key metrics and visualizes the queue dynamics over time.
+- Choose between **M/M/1** and **M/M/1/K** models.
+- Input system parameters:
+  - Arrival time (1/λ)
+  - Service time (1/μ)
+  - System capacity (K) for M/M/1/K
+- Calculate key performance metrics:
+  - ρ (utilization)
+  - L (average number of customers)
+  - Lq (average number in queue)
+  - W (average time in system)
+  - Wq (average waiting time in queue)
+- Visual diagram showing **n(t)**, customer arrivals, and service times.
+- Input validation to prevent incorrect or impossible values.
+- Dynamic **case analysis** for different system behaviors.
 
-----------------------------------------------------------------
+---
 
-✨ Features
+## 🧩 **Logic and Workflow**
 
-🖥 Interactive Input Fields
+1. **Input Parameters**
+   - Users enter arrival time, service time, system capacity, and the number of customers.
+2. **Validation**
+   - Ensures all inputs are numeric and valid according to the selected model.
+3. **Calculate Performance Measures**
+   - For **M/M/1**, compute ρ, L, Lq, W, and Wq.
+   - For **M/M/1/K**, compute ρ, P₀, Pₖ, λ′, L, Lq, W, and Wq.
+4. **Case Identification**
+   - Determines if the system is fast arrivals, fast service, or critical (1/λ = 1/μ).
+5. **Diagram Generation**
+   - Draws **customer arrivals** and **service events** as arrows.
+   - Visualizes **n(t)** (number of customers in the system over time).
+6. **Output**
+   - Displays metrics in a **clean, structured layout**.
+   - Updates dynamically when input values change.
 
-    Arrival time (λ)
+---
 
-    Service time (μ)
+## 🛠️ **Technologies Used**
 
-System capacity (K) for M/M/1/K
-    
-    Number of servers (m)
-    
-    Time t for n(t)
-    
-    Customer number n for Wq(n)
-    
-    Kendall notation input
+- **HTML5 & CSS3** for structure and styling
+- **JavaScript** for calculations and dynamic visualizations
+- **Bootstrap 5** for responsive design and components
+- **Bootstrap Icons** for visual cues
 
-📊 Automatic Calculations
-    
-    Traffic intensity (ρ)
-    
-    Average number in system (L) and queue (Lq)
-    
-    Average time in system (W) and waiting time in queue (Wq)
-    
-    Probability calculations for M/M/1/K (P0, Pk, λ′)
-    
-    n(t) and Wq(n) calculations
+---
+## 🖼 Screenshots
 
-📈 Dynamic Diagram
-    
-    Visualizes customer arrivals and service events
-    
-    Color-coded arrows for clarity
-    
-    Stepwise n(t) queue length chart
 
-⚠️ Input Validation
-    
-    Checks for invalid or zero values
-    
-    Prevents unstable system calculations
+---
+
+## 🎨 **How to Use**
+
+1. Open the live demo: [Queueing Theory Simulator](https://ahmedmohammefarouq.github.io/Queueing-Theory/)
+2. Select the **queue model**: M/M/1 or M/M/1/K.
+3. Enter the **arrival time**, **service time**, **capacity**, and other required parameters.
+4. Click **"Calculate Performance Measures"**.
+5. View the **results** and **diagram** showing system behavior.
+
+---
+
+## 📊 **Screenshots**
+
+![Queueing Simulator Screenshot](screenshot.png)
+
+---
+
+## 🔗 **Live Demo**
+
+[https://ahmedmohammefarouq.github.io/Queueing-Theory/](https://ahmedmohammefarouq.github.io/Queueing-Theory/)
+
+---
+
+## 📂 **Project Structure**
+
+```css
+/assets
+  /css
+    bootstrap.min.css
+    style.css
+  /js
+    script.js
+index.html
+stoch.html
+README.md
+
